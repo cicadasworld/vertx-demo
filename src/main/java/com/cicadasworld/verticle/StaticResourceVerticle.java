@@ -1,4 +1,4 @@
-package com.cicadasworld;
+package com.cicadasworld.verticle;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,4 +1,4 @@
-package com.cicadasworld;
+package com.cicadasworld.verticle;
 
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.Promise;

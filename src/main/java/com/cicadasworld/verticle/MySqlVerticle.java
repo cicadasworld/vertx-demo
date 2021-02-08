@@ -1,4 +1,4 @@
-package com.cicadasworld;
+package com.cicadasworld.verticle;
 
 import java.util.ArrayList;
 import java.util.List;

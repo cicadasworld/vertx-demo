@@ -1,4 +1,4 @@
-package com.cicadasworld;
+package com.cicadasworld.verticle;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,7 +17,7 @@ import io.vertx.sqlclient.RowSet;
 import io.vertx.sqlclient.SqlConnection;
 import io.vertx.sqlclient.Tuple;
 
-public class HandleExceptionVerticle extends AbstractVerticle {
+public class FuturePromiseVerticle extends AbstractVerticle {
 
     // 1. 声明路由
     Router router;
@@ -83,11 +83,6 @@ public class HandleExceptionVerticle extends AbstractVerticle {
                             req.response()
                                 .putHeader("content-type", "application/json")
                                 .end(list.toString());
-                        })
-                        .onFailure(throwable -> {
-                            req.response()
-                                .putHeader("content-type", "application/json")
-                                .end(throwable.toString());
                         });
                 });
 
